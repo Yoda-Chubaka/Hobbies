@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My hobbies</title>
+    <title lang="en">My hobbies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <div>
-        <h1>Main hobbies</h1>
-        <div>
+    <div class="main-hobbies">
+        <h1 class="main-title">Main hobbies</h1>
+        <p class="main-article">This website describes my favourite hobbies. Let's discover them together!</p>
+        <div class="reading hobby-block">
             <h2>Reading</h2>
             <p>I love reading the books! My favorite book is <b>The Haunt of the Baskervilles</b>🐕‍🦺.</p>
             <a href="https://www.gutenberg.org/files/2852/2852-h/2852-h.htm" target="blank_">Read the book</a>
@@ -90,8 +95,8 @@
                 </tr>
             </table>
         </div>
-        <br>
-            <h2>Cooking</h2>
+            <div class="cooking hobby-block">
+                <h2>Cooking</h2>
             <p>I can cook cosy dishes as tasty as possible! I love <em>baking ginger biscuits and grated cherry pie</em>🍪.</p>
             <a href="https://www.bbcgoodfood.com/recipes/ginger-biscuits" target="blank_">Read the ginger biscuits recipe</a></br>
             <a href="https://www.marthastewart.com/cherry-pie-recipes-7562074" target="blank_">Read the grated cherry pie recipe</a>
@@ -249,6 +254,7 @@
                     </td>
                 </tr>
             </table>
+            </div>
         </div>
     </div>
 </body>
