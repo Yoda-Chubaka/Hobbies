@@ -17,7 +17,7 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 }
-    
+   
 a {
     text-decoration: none;
 }
@@ -111,10 +111,14 @@ img {
 }
 .tea-link:hover,
 .tea-link:focus {
-    color: red;
+    text-decoration: underline;
     cursor: pointer;
 }
 
 .tea-link:visited {
     color: var(--secondary-text-color)
+}
+
+ul {
+    color: red;
 }
