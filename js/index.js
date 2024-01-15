@@ -68,6 +68,138 @@ console.log(y);
 
 
 
+
+
+// Зробити фото максимально червоним:
+// var image = new SimpleImage("chapel.png");
+// for (var pixel of image.values()) {
+// pixel.setRed(255);
+// }
+// print(image);
+
+// Прибрати червоний колір з фото:
+// var image = new SimpleImage("chapel.png");
+// for (var pixel of image.values()) {
+// pixel.setRed(0);
+// }
+// print(image);
+
+// Зробити фото червоним на 70:
+// var image = new SimpleImage("eastereggs.jpg");
+// for (var pixel of image.values()) {
+// if (pixel.getRed() > 70) {
+// pixel.setRed(70);
+// }
+// }
+// print(image);
+
+// Додати чорну риску внизу фото:
+// var someImage = new SimpleImage("astrachan.jpg");
+// var height = someImage.getHeight();
+// for (var pixel of someImage.values()) {
+// if (pixel.getY() >= height - 10) {
+// pixel.setRed(0);
+// pixel.setGreen(0);
+// pixel.setBlue(0);
+// }
+// }
+// print(someImage);
+
+// Додати зелений квадрат 50x50:
+// var someImage = new SimpleImage("chapel.png");
+// for (var pixel of someImage.values()) {
+// if (pixel.getY() < 50) {
+// if (pixel.getX() < 50) {
+// pixel.setRed(0);
+// pixel.setGreen(255);
+// pixel.setBlue(0);
+// }
+// }
+// }
+// print(someImage);
+
+// Додати жовтий прямокутник 30x60:
+// function topRightCorner(cornerWidth, cornerHeight, someImage, red, green, blue) {
+// var width = someImage.getWidth();
+// for (var pixel of someImage.values()) {
+// if (pixel.getY() < cornerHeight) {
+// if (pixel.getX() > width - cornerWidth) {
+// pixel.setRed(red);
+// pixel.setGreen(green);
+// pixel.setBlue(blue);
+// }
+// }
+// }
+// return someImage;
+// }
+// var picture = new SimpleImage("chapel.png");
+// var result = topRightCorner(30, 60, picture, 255, 255, 0);
+// print(result);
+
+// Намалювати 3 різнокольорових квадрати:
+// function topRightCorner(cornerWidth, cornerHeight, someImage, red, green, blue) {
+// var width = someImage.getWidth();
+// for (var pixel of someImage.values()) {
+// if (pixel.getY() < cornerHeight) {
+// if (pixel.getX() > width - cornerWidth) {
+// pixel.setRed(red);
+// pixel.setGreen(green);
+// pixel.setBlue(blue);
+// }
+// }
+// }
+// return someImage;
+// }
+// var picture = new SimpleImage("chapel.png");
+// var result = topRightCorner(30, 60, picture, 255, 255, 0);
+// var result2 = topRightCorner(60, 30, result, 0, 0, 255);
+// var result3 = topRightCorner(30, 30, result2, 0, 255, 0);
+// print(result3);
+
+// Намалювати червоний градієнт:
+// function changeRed(width, height) {
+// var picture = new SimpleImage(width, height);
+// var red = 0;
+// for (var pixel of picture.values()) {
+// pixel.setRed(red);
+// pixel.setGreen(0);
+// pixel.setBlue(0);
+// if (pixel.getRed() < 255) {
+// red = red + 1;
+// }
+// if (pixel.getRed() == 255) {
+// red = 0;
+// }
+// }
+// return picture;
+// }
+// var result = changeRed(256,200);
+// print(result);
+
+// Намалювати різнокольоровий градієнт:
+// function changeRed(width, height, green, blue) {
+// var picture = new SimpleImage(width, height);
+// var red = 0;
+// for (var pixel of picture.values()) {
+// pixel.setRed(red);
+// pixel.setGreen(green);
+// pixel.setBlue(blue);
+// if (pixel.getRed() < 255) {
+// red = red + 1;
+// }
+// if (pixel.getRed() == 255) {
+// red = 0;
+// }
+// }
+// return picture;
+// }
+// var result = changeRed(256,200, 200, 100);
+// print(result);
+
+
+
+
+
 // function sumPixel(nameOfImage, xpos, ypos) {
 //     var someImg = new SimpleImage(nameOfImage);
 //   var red = someImg.getRed(xpos, ypos);
