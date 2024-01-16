@@ -199,7 +199,7 @@ console.log(y);
 
 
 
-
+// Порахувати кількість пікселів по осі x та y на фото Дрю:
 // function sumPixel(nameOfImage, xpos, ypos) {
 //     var someImg = new SimpleImage(nameOfImage);
 //   var red = someImg.getRed(xpos, ypos);
@@ -225,3 +225,50 @@ console.log(y);
 //     pixel.setBlue(newB);
 // }
 // print(img);
+
+// Зробити диявола Дюка на білому фоні:
+// var image = new SimpleImage("duke_blue_devil.png");
+// for (var pixel of image.values()) {  
+//   if (pixel.getRed() < 200) {
+//   pixel.setRed(0);  
+//   pixel.setGreen(255);  
+//   pixel.setBlue(100);      
+//  }
+// }
+// print(image);
+
+// Фото Дрю і Роберта на фоні динозаврів замість зеленого фону:
+// var fgImage = new SimpleImage("drewRobert.png");
+// var bgImage = new SimpleImage("dinos.png");
+// var output = new SimpleImage(fgImage.getWidth(), fgImage.getHeight());
+// for (var pixel of fgImage.values()) {
+//     if (pixel.getGreen() > pixel.getRed() + pixel.getBlue()) {
+//         var x = pixel.getX();
+//         var y = pixel.getY();
+//         var bgPixel = bgImage.getPixel(x, y);
+//         output.setPixel(x, y, bgPixel);
+//     }
+//     else {
+//         output.setPixel(pixel.getX(), pixel.getY(), pixel);
+//     }
+// }
+// print(output);
+
+// Різнокольоровий квадрат:
+// var img = new SimpleImage(200,200);
+// for (var px of img.values()){
+// var x = px.getX();
+// var y = px.getY();
+// if (x < img.getWidth()/2){
+// px.setRed(255);
+// }
+// if (y>img.getHeight()/2){
+// px.setBlue(255);
+// }
+// if (x > img.getWidth()/2)
+// if (y < img.getHeight()/2)
+// {
+// px.setGreen(255);
+// }
+// }
+// print (img);
