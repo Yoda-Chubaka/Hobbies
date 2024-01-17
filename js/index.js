@@ -272,3 +272,79 @@ console.log(y);
 // }
 // }
 // print (img);
+
+// Зробити диявола Дюка з блакитного на зелений по горизонталі вправо і вверх:
+// var image = new SimpleImage("duke_blue_devil.png");
+// print(image);
+// for (var pixel of image.values()) {
+//     x = pixel.getX();
+//     y = pixel.getY();
+//     if (x > y) {
+//     pixel.setRed(0);
+//     pixel.setBlue(0);
+//     }
+// }
+// print(image);
+
+// Зробити чорну рамку по периметру фото панди:
+
+
+
+
+// Слово + сепаратор
+// function compose(word, separator) {
+// return word + separator + word + separator + word;
+// }
+
+// var phrase = compose("duck", "goose");
+// print(phrase);
+
+// var phrase2 = compose("meow","-");
+// print(phrase2);
+
+// One, two, three, four
+// var x = 30;
+// var y = 8;
+// if (x > 10) {
+// 	print("one");
+// 	if (y < 10) {
+// 		print("two");
+// 	}
+// }
+// if (x < 20) {
+// 	print("three");
+// 	if (y > 5) {
+// 		print("four");
+// 	}
+// }
+
+// Порахувати кількість пікселів, що мстять більше червоного ніж зеленого:
+// function moreRedThanGreen(namefile) {
+// var someImg = new SimpleImage(namefile);
+// var count = 0;
+// for (var pix of someImg.values()) {
+// if (pix.getRed() > pix.getGreen()) {
+// count = count + 1;
+// }
+// }
+// return count;
+// }
+// var img = new SimpleImage("eastereggs.jpg")
+// print(moreRedThanGreen(img));
+
+// Кількість пікселів, що містять червоного більше low і менше high:
+// function numberRedPixels(namefile, low, high) {
+// var someImg = new SimpleImage(namefile);
+// var count = 0;
+// for (var pix of someImg.values()) {
+// var red = pix.getRed();
+// if (red >= low) {
+// if (red <= high) {
+// count = count + 1;
+// }
+// }
+// }
+// return count;
+// }
+// var someImg = new SimpleImage("eastereggs.jpg")
+// print(numberRedPixels(someImg, 100, 180));
